@@ -2,6 +2,7 @@
 
 use Illuminate\Mail\Mailables\Content;
 use Mockery\MockInterface;
+use Rochmadnf\Recail\Exceptions\DirectoryNullException;
 use Rochmadnf\Recail\Exceptions\NodeNotFoundException;
 use Rochmadnf\Recail\ReactMailable;
 use Rochmadnf\Recail\Renderer;
@@ -32,6 +33,14 @@ it('prioritises configuration value over executable finder', function () {
     config()->set('react-email.node_path', '/path/to/node');
 
     expect(Renderer::resolveNodeExecutable())->toEqual('/path/to/node');
+});
+
+it('throws an exception if template directory path is null', function () {
+    config()->set('react-email.template_directory', null);
+
+    $this->expectException(DirectoryNullException::class);
+
+    (new TestMailable)->render();
 });
 
 const EXPECTED_HTML = <<<'HTML'

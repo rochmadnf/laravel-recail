@@ -2,6 +2,7 @@
 
 namespace Rochmadnf\Recail;
 
+use Rochmadnf\Recail\Exceptions\DirectoryNullException;
 use Rochmadnf\Recail\Exceptions\NodeNotFoundException;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\ExecutableFinder;
@@ -18,7 +19,7 @@ class Renderer extends Process
             $this->resolveNodeExecutable(),
             base_path(config('react-email.tsx_path') ?? '/node_modules/.bin/tsx'),
             __DIR__.'/../render.tsx',
-            config('react-email.template_directory').$view,
+            $this->resolveDirectoryPath().$view,
             json_encode($data),
         ], base_path());
     }
@@ -55,6 +56,22 @@ class Renderer extends Process
 
         throw new NodeNotFoundException(
             'Unable to resolve node path automatically, please provide a configuration value in react-emails'
+        );
+    }
+
+    /**
+     * Resolve the directory path.
+     *
+     * @throws DirectoryNullException
+     */
+    public static function resolveDirectoryPath(): string
+    {
+        if (! is_null($dirPath = config('react-email.template_directory'))) {
+            return $dirPath;
+        }
+
+        throw new DirectoryNullException(
+            'Unable to resolve template directory path, please provide a configuration value in react-emails'
         );
     }
 }
