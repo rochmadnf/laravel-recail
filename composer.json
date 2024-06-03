@@ -1,0 +1,39 @@
+{
+    "name": "rochmadnf/laravel-react-email",
+    "description": "React email for Laravel",
+    "keywords": ["laravel", "react", "react email", "email"],
+    "homepage": "https://github.com/rochmadnf/laravel-react-email",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rochmadnf\\LaravelReactEmail\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rochmad",
+            "email": "rochmadnf@protonmail.com"
+        },
+        {
+            "name": "Jamie Schouten",
+            "email": "j4mie@hey.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rochmadnf\\LaravelReactEmail\\ReactEmailServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.20 || ^8.0 || ^9.0",
+        "pestphp/pest": "^1.20 || ^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
