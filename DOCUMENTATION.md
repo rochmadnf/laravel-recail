@@ -60,11 +60,14 @@
    > Note: You can customize the name and placement of email folders according to your preferences.
 
 4. Config React Email in `.env` file.
+
    ```env
    REACT_EMAIL_DIRECTORY="/your/absolute/path/to/mail/directory/"
    REACT_EMAIL_NODE_PATH="/your/absolute/path/to/node/directory"
-   REACT_EMAIL_TSX_PATH="/your/basepath/to/tsx"
+
+   REACT_EMAIL_TSX_PATH="/node_modules/tsx/dist/cli.mjs" # this variable is optional for yarn and npm
    ```
+
 5. Create an email in the mail directory e.g `new-user.tsx` and make sure the component is `default export`.
 
    ```tsx
