@@ -4,7 +4,7 @@
 
 ## Documentation
 
-Coming soon...
+Full documentation is available at [here](./DOCUMENTATION.md)
 
 ## License
 
