@@ -62,7 +62,7 @@
 4. Config React Email in `.env` file.
    ```env
    REACT_EMAIL_DIRECTORY="/your/absolute/path/to/mail/directory/"
-   REACT_EMAIL_NODE_PATH="/your/absolute/path/to/node/directory
+   REACT_EMAIL_NODE_PATH="/your/absolute/path/to/node/directory"
    REACT_EMAIL_TSX_PATH="/your/basepath/to/tsx"
    ```
 5. Create an email in the mail directory e.g `new-user.tsx` and make sure the component is `default export`.
