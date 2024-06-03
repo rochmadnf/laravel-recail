@@ -1,6 +1,6 @@
 <?php
 
-namespace Rochmadnf\LaravelReactEmail\Exceptions;
+namespace Rochmadnf\Recail\Exceptions;
 
 use Exception;
 

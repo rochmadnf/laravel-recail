@@ -1,6 +1,6 @@
 <?php
 
-use Maantje\ReactEmail\ReactEmailServiceProvider;
+use Rochmadnf\Recail\ReactEmailServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {

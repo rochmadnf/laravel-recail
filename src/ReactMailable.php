@@ -1,6 +1,6 @@
 <?php
 
-namespace Rochmadnf\LaravelReactEmail;
+namespace Rochmadnf\Recail;
 
 use Illuminate\Mail\Mailable;
 use Illuminate\Support\HtmlString;

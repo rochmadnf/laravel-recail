@@ -4,9 +4,9 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
-use Rochmadnf\LaravelReactEmail\Exceptions\NodeNotFoundException;
-use Rochmadnf\LaravelReactEmail\ReactMailable;
-use Rochmadnf\LaravelReactEmail\Renderer;
+use Rochmadnf\Recail\Exceptions\NodeNotFoundException;
+use Rochmadnf\Recail\ReactMailable;
+use Rochmadnf\Recail\Renderer;
 use Mockery\MockInterface;
 use Symfony\Component\Process\ExecutableFinder;
 

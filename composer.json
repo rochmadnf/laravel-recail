@@ -1,29 +1,31 @@
 {
     "name": "rochmadnf/laravel-recail",
-    "description": "React email for Laravel",
-    "keywords": ["laravel", "react", "react email", "email"],
+    "description": "React Email for Laravel",
+    "keywords": ["laravel", "laravel mail", "react", "react email", "email", "resend", "laravel resend", "laravel react email"],
     "homepage": "https://github.com/rochmadnf/laravel-recail",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Rochmadnf\\LaravelReactEmail\\": "src/"
+            "Rochmadnf\\Recail\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Rochmad",
-            "email": "rochmadnf@protonmail.com"
+            "name": "Rochmad Nurul Fahmi",
+            "email": "rochmadnf@protonmail.com",
+            "role": "contributor"
         },
         {
             "name": "Jamie Schouten",
-            "email": "j4mie@hey.com"
+            "email": "j4mie@hey.com",
+            "role": "main contributor"
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
-                "Rochmadnf\\LaravelReactEmail\\ReactEmailServiceProvider"
+                "Rochmadnf\\Recail\\ReactEmailServiceProvider"
             ]
         }
     },

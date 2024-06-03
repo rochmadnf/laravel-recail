@@ -1,8 +1,8 @@
 <?php
 
-namespace Rochmadnf\LaravelReactEmail;
+namespace Rochmadnf\Recail;
 
-use Rochmadnf\LaravelReactEmail\Exceptions\NodeNotFoundException;
+use Rochmadnf\Recail\Exceptions\NodeNotFoundException;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\ExecutableFinder;
 use Symfony\Component\Process\Process;
