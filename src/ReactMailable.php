@@ -11,7 +11,6 @@ class ReactMailable extends Mailable
     /**
      * Override buildView from Mailable to render react-email emails instead of blade views
      *
-     * @return array
      * @throws ReflectionException
      */
     protected function buildView(): array

@@ -11,6 +11,6 @@
 |
 */
 
-require __DIR__ . '/TestCase.php';
+require __DIR__.'/TestCase.php';
 
 uses(TestCase::class)->in('Unit');

@@ -1,13 +1,10 @@
 <?php
 
-use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailables\Content;
-use Illuminate\Mail\Mailables\Envelope;
-use Illuminate\Queue\SerializesModels;
+use Mockery\MockInterface;
 use Rochmadnf\Recail\Exceptions\NodeNotFoundException;
 use Rochmadnf\Recail\ReactMailable;
 use Rochmadnf\Recail\Renderer;
-use Mockery\MockInterface;
 use Symfony\Component\Process\ExecutableFinder;
 
 it('renders the html and text from react-email', function () {
@@ -37,7 +34,7 @@ it('prioritises configuration value over executable finder', function () {
     expect(Renderer::resolveNodeExecutable())->toEqual('/path/to/node');
 });
 
-const EXPECTED_HTML = <<<HTML
+const EXPECTED_HTML = <<<'HTML'
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
   <p data-id="react-email-text" style="font-size:14px;line-height:24px;margin:16px 0">Hello from react email, test</p>
@@ -50,6 +47,7 @@ class TestMailable extends ReactMailable
     public function __construct(public array $user = ['name' => 'test'])
     {
     }
+
     public function content()
     {
         return new Content('new-user');
