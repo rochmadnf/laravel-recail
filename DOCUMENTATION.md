@@ -62,10 +62,16 @@
 4. Config React Email in `.env` file.
 
    ```env
+
+   (Mac/Linux)
    REACT_EMAIL_DIRECTORY="/your/absolute/path/to/mail/directory/"
    REACT_EMAIL_NODE_PATH="/your/absolute/path/to/node/directory"
 
-   REACT_EMAIL_TSX_PATH="/node_modules/tsx/dist/cli.mjs" # this variable is optional for yarn and npm
+   (Windows)
+   REACT_EMAIL_DIRECTORY="C:\\your\\absolute\\path\\to\\mail\\directory\\"
+   REACT_EMAIL_NODE_PATH="C:\\your\\absolute\\path\\to\\node\\directory"
+
+   REACT_EMAIL_TSX_PATH="\node_modules/tsx/dist/cli.mjs" # this variable is optional for yarn and npm
    ```
 
 5. Create an email in the mail directory e.g `new-user.tsx` and make sure the component is `default export`.

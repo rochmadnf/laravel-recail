@@ -67,7 +67,7 @@ class Renderer extends Process
     public static function resolveDirectoryPath(): string
     {
         if (! is_null($dirPath = config('react-email.template_directory'))) {
-            return $dirPath;
+            return (PHP_OS_FAMILY === 'Windows' || PHP_OS === 'Windows') ? 'file:///'.$dirPath : $dirPath;
         }
 
         throw new DirectoryNullException(
