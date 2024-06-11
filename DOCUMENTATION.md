@@ -1,10 +1,3 @@
-# Laravel Recail
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/rochmadnf/laravel-recail.svg)](https://packagist.org/packages/rochmadnf/laravel-recail)
-[![Total Downloads](https://img.shields.io/packagist/dt/rochmadnf/laravel-recail.svg)](https://packagist.org/packages/rochmadnf/laravel-recail)
-
-**Laravel Recail** stands for **Laravel React Email**. This package makes it easy to write email notification templates or components with [React Email](https://react.email) instead of using Blade or Markdown. If you are a **ReactJS Developer**, this package is perfect for you 😎.
-
 ## Installation
 
 1. Change to your directory app.
@@ -126,14 +119,3 @@
    ```
 
 8. Done. You can try your mail notifications 🎉
-
-## Testing
-
-```bash
-./vendor/bin/pest
-```
-
-## Credits
-
-- [Jamie Schouten](https://github.com/maantje)
-- [All Contributors](https://github.com/maantje/laravel-react-email/graphs/contributors)

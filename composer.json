@@ -1,6 +1,6 @@
 {
   "name": "rochmadnf/laravel-recail",
-  "description": "React Email for Laravel",
+  "description": "React Email for Laravel Developer",
   "keywords": [
     "laravel",
     "laravel mail",
@@ -13,6 +13,10 @@
     "laravel react email"
   ],
   "homepage": "https://github.com/rochmadnf/laravel-recail",
+  "support": {
+    "issues": "https://github.com/rochmadnf/laravel-recail/issues",
+    "source": "https://github.com/rochmadnf/laravel-recail"
+  },
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -22,14 +26,14 @@
   },
   "authors": [
     {
-      "name": "Rochmad Nurul Fahmi",
-      "email": "rochmadnf@protonmail.com",
-      "role": "contributor"
-    },
-    {
       "name": "Jamie Schouten",
       "email": "j4mie@hey.com",
-      "role": "main contributor"
+      "role": "Forked package creator | Developer"
+    },
+    {
+      "name": "Rochmad Nurul Fahmi",
+      "email": "rochmadnf@gmail.com",
+      "role": "Developer"
     }
   ],
   "extra": {
