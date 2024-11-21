@@ -15,7 +15,7 @@
    npm:
 
    ```bash
-   npm i tsx react@18 @react-email/render @react-email/components
+   npm i tsx react@18.3.1 @react-email/render@0.0.17 @react-email/components
    ```
 
    ```bash
@@ -25,7 +25,7 @@
    yarn:
 
    ```bash
-   yarn add tsx react@18 @react-email/render @react-email/components
+   yarn add tsx react@18.3.1 @react-email/render@0.0.17 @react-email/components
    ```
 
    ```bash
@@ -35,7 +35,7 @@
    pnpm:
 
    ```bash
-   pnpm add tsx react@18 @react-email/render @react-email/components
+   pnpm add tsx react@18.3.1 @react-email/render@0.0.17 @react-email/components
    ```
 
    ```bash
