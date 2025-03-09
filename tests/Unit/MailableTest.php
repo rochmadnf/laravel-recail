@@ -45,8 +45,8 @@ it('throws an exception if template directory path is null', function () {
 
 const EXPECTED_HTML = <<<'HTML'
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="en">
-  <p data-id="react-email-text" style="font-size:14px;line-height:24px;margin:16px 0">Hello from react email, test</p>
+<html dir="ltr" lang="en">
+  <p style="font-size:14px;line-height:24px;margin:16px 0">Hello from react email, test</p>
 
 </html>
 HTML;
@@ -55,6 +55,7 @@ class TestMailable extends ReactMailable
 {
     public function __construct(public array $user = ['name' => 'test'])
     {
+        //
     }
 
     public function content()
